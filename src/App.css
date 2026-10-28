@@ -1,0 +1,44 @@
+/* LEARNING: Styles for the app shell (header, nav, main content) */
+
+#root {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #444;
+  padding-bottom: 0.75rem;
+}
+
+/* LEARNING: NavLink adds an "active" class automatically when the URL matches */
+nav a {
+  color: #888;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a.active {
+  color: #646cff;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #646cff;
+  background: transparent;
+  color: #646cff;
+  cursor: pointer;
+}
+
+button:hover {
+  background: rgba(100, 108, 255, 0.15);
+}
