@@ -34,18 +34,7 @@ function App() {
             path="/conditional-rendering"
             element={<ConditionalRendering />}
           />
-          {/* LEARNING: "*" is a catch-all for unknown URLs */}
-          <Route path="*" element={<p>❌ Page not found</p>} />
-        </Routes>
-      </main>
-
-
-      {/* LEARNING: <Routes> looks at the URL and renders the matching component */}
-      <main>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About author="React Learner" />} />
-          <Route
+           <Route
             path="/bug-find"
             element={<Bugfind />}
           />
@@ -53,6 +42,9 @@ function App() {
           <Route path="*" element={<p>❌ Page not found</p>} />
         </Routes>
       </main>
+
+
+      
     </>
   )
 }
