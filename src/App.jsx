@@ -5,6 +5,7 @@ import Home from './pages/Home.jsx'
 import About from './pages/About.jsx'
 import ConditionalRendering from './pages/ConditionalRendering.jsx'
 import './App.css'
+import Bugfind from './pages/BugFind.jsx'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           </NavLink>
           <NavLink to="/about">About</NavLink>
           <NavLink to="/conditional-rendering">Conditional rendering</NavLink>
+          <NavLink to="/bug-find">Bug Find</NavLink>
         </nav>
       </header>
 
@@ -31,6 +33,21 @@ function App() {
           <Route
             path="/conditional-rendering"
             element={<ConditionalRendering />}
+          />
+          {/* LEARNING: "*" is a catch-all for unknown URLs */}
+          <Route path="*" element={<p>❌ Page not found</p>} />
+        </Routes>
+      </main>
+
+
+      {/* LEARNING: <Routes> looks at the URL and renders the matching component */}
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About author="React Learner" />} />
+          <Route
+            path="/bug-find"
+            element={<Bugfind />}
           />
           {/* LEARNING: "*" is a catch-all for unknown URLs */}
           <Route path="*" element={<p>❌ Page not found</p>} />
