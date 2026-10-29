@@ -4,6 +4,7 @@ import { NavLink, Route, Routes } from 'react-router-dom'
 import Home from './pages/Home.jsx'
 import About from './pages/About.jsx'
 import ConditionalRendering from './pages/ConditionalRendering.jsx'
+import Forms from './pages/Forms.jsx'
 import './App.css'
 import Bugfind from './pages/BugFind.jsx'
 
@@ -21,6 +22,7 @@ function App() {
           </NavLink>
           <NavLink to="/about">About</NavLink>
           <NavLink to="/conditional-rendering">Conditional rendering</NavLink>
+          <NavLink to="/forms">Forms</NavLink>
           <NavLink to="/bug-find">Bug Find</NavLink>
         </nav>
       </header>
@@ -34,6 +36,7 @@ function App() {
             path="/conditional-rendering"
             element={<ConditionalRendering />}
           />
+          <Route path="/forms" element={<Forms />} />
            <Route
             path="/bug-find"
             element={<Bugfind />}

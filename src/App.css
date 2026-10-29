@@ -42,3 +42,113 @@ button {
 button:hover {
   background: rgba(100, 108, 255, 0.15);
 }
+
+.forms-lesson {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.forms-intro {
+  margin: 0 0 1.25rem;
+}
+
+.forms-lesson code {
+  margin: 0 0.2rem;
+}
+
+.learning-form {
+  display: grid;
+  gap: 1rem;
+  max-width: 480px;
+  margin: 1.5rem auto;
+}
+
+.form-field {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.form-field label {
+  color: var(--text-h);
+  font-weight: 600;
+}
+
+.form-field input,
+.form-field select {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 2.75rem;
+  padding: 0.5rem 0.65rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text-h);
+  background: var(--bg);
+  font: inherit;
+}
+
+.form-field input:focus,
+.form-field select:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.checkbox-field {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-h);
+}
+
+.form-actions {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.secondary-button {
+  border-color: var(--border);
+  color: var(--text);
+}
+
+.form-error {
+  color: #b42318;
+  font-size: 0.9rem;
+}
+
+.form-success {
+  margin: 1rem auto;
+  padding: 0.75rem;
+  border: 1px solid #16803c;
+  border-radius: 6px;
+  color: #16803c;
+}
+
+.form-concepts {
+  margin: 2rem auto;
+}
+
+.form-concepts h3 {
+  color: var(--text-h);
+  margin: 1.5rem 0 0.5rem;
+}
+
+.form-concepts ul {
+  padding-left: 1.5rem;
+}
+
+.form-concepts li {
+  margin: 0.6rem 0;
+}
+
+.failure-examples {
+  overflow-x: auto;
+  padding: 1rem;
+  border-radius: 6px;
+  background: var(--code-bg);
+  text-align: left;
+}
+
+.failure-examples code {
+  display: block;
+  white-space: pre;
+}
