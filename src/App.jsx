@@ -7,7 +7,7 @@ import ConditionalRendering from './pages/ConditionalRendering.jsx'
 import Forms from './pages/Forms.jsx'
 import './App.css'
 import Bugfind from './pages/BugFind.jsx'
-
+import Form_my from './pages/Form_my.jsx'
 function App() {
   return (
     <>
@@ -23,6 +23,8 @@ function App() {
           <NavLink to="/about">About</NavLink>
           <NavLink to="/conditional-rendering">Conditional rendering</NavLink>
           <NavLink to="/forms">Forms</NavLink>
+
+          <NavLink to="/forms_my">Forms</NavLink>
           <NavLink to="/bug-find">Bug Find</NavLink>
         </nav>
       </header>
@@ -37,6 +39,7 @@ function App() {
             element={<ConditionalRendering />}
           />
           <Route path="/forms" element={<Forms />} />
+          <Route path="/forms_my" element={<Form_my />} />
            <Route
             path="/bug-find"
             element={<Bugfind />}

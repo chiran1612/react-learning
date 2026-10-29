@@ -152,7 +152,7 @@ export default function Forms() {
         </p>
       )}
 
-      <section className="form-concepts" aria-labelledby="form-concepts-title">
+      {/* <section className="form-concepts" aria-labelledby="form-concepts-title">
         <h3 id="form-concepts-title">Key concepts and common cases</h3>
         <ul>
           <li>
@@ -203,7 +203,7 @@ export default function Forms() {
 // 5. Updating a single property without copying loses the other fields:
 // setForm({ name: event.target.value })`}</code>
         </pre>
-      </section>
+      </section> */}
     </section>
   )
 }
