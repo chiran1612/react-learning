@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types'
+
 // LEARNING: A component can receive data from its parent via "props".
 // Here the prop is optional and has a default value.
 // function LearnerCard({ name, role }) {
@@ -15,6 +17,10 @@ function LearnerCard(props) {
   )
 }
 
+LearnerCard.propTypes = {
+  name: PropTypes.string,
+  role: PropTypes.string,
+}
 
 export default function About({ author = 'You' }) {
   return (
@@ -30,4 +36,14 @@ export default function About({ author = 'You' }) {
       <LearnerCard name="Alex" role="beginner" />
     </section>
   )
+}
+
+
+
+
+
+
+
+About.propTypes = {
+  author: PropTypes.string,
 }
