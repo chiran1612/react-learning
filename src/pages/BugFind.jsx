@@ -8,7 +8,7 @@ export default function Bugfind() {
 
 function updateAge(){
 // This old approach mutates the existing state object. React may not detect
-// the change because setUser receives the same object reference.
+// the change and do not rerender  because setUser receives the same object reference.
 // user.age = 30;
 // setUser(user);
 
